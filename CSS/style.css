@@ -1,0 +1,59 @@
+* 
+{
+    box-sizing: border-box;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, ul, li, img
+{             
+    margin: 0;
+   	padding: 0;
+    border: 0;
+    vertical-align: baseline;
+
+    /* scroll-behavior: smooth; */
+}
+
+
+header
+{
+    min-width:max-content;
+    height: fit-content;
+
+    display: flex;
+
+    font-size: 30px;
+}
+
+header p
+{
+    width: 10%;
+
+    border: 5px solid black;
+
+    padding: 5px;
+
+    text-align: center;
+}
+
+header div
+{
+    width: 90%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header div div
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header div div a
+{
+    display: block;
+}
