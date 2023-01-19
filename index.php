@@ -20,7 +20,9 @@
     </main>
 
     <footer>
-
+        <?php
+            require_once "widget/footer.php";
+        ?>    
     </footer>
 
 
