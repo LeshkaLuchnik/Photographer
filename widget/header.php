@@ -2,10 +2,8 @@
     <p>LESHKA LUCHNIK</p>
 
 <div>
-    <div>
-        <a href="#">Портфолио</a>
-        <a href="#">Инфо</a>
-        <a href="#">Контакты</a>
-    </div>
+        <a href="#"><p>Портфолио</p></a>
+        <a href="#"><p>Инфо</p></a>
+        <a href="#"><p>Контакты</p></a>
 </div>
 
