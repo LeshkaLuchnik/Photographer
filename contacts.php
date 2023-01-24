@@ -17,22 +17,23 @@
         ?>
     </header>
 
-    <main>
-        <div class='Photos' id='Photos'>
-            <?php
-                for ($j = 1; $j < 28; $j++)
-                {
-                    echo '<div class="Scale">';
-                        echo "<img src='IMG/Photos/" . $j . ".JPG' alt='" . $j . "' id='$j' onclick='ModalIMG(event)'>";
-                    echo '</div>';
-                }
-            ?>
+    <main class="Contacts">
+        <div>
+            <p>КОНТАКТЫ</p>
+            <p>
+                Я всегда открыт новым предложениям и неожиданным путешествиям. 
+                Если у вас есть идеи и предложения, напишите мне.
+            </p>
         </div>
         
+        <div>
+            <p>ТЕЛЕФОН</p> 
+            <p>+7 987 654 320 00</p>
+        </div>
 
-        <div id="ModalBlock" class="ModalBlock">
-            <span id="close"><img src="IMG/icons/interface/close.png" alt="close"></span>
-            <img class="ModalIMG animate" id="ModalIMG">
+        <div>
+            <p>ПОЧТА</p>
+            <p>GeorgieSmetana@gmail.com</p>
         </div>
     </main>
 

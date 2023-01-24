@@ -1,9 +1,9 @@
 <div>
-    <a href="">
+    <a href="https://t.me/Leshka_Luchnik">
         <img class="rotateIMG" src="IMG/icons/social/telegram.png" alt="Telegram">
         <p class="string">Telegram</p>
     </a>
-    <a href="">
+    <a href="https://www.instagram.com/leshka_lu4nik/">
         <img class="rotateIMG" src="IMG/icons/social/instagram.png" alt="Instagram">
         <p class="string">Instagram</p>
     </a>

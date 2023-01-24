@@ -93,7 +93,10 @@ header div
 
 main
 {
-    min-height: calc(100vh - 300px);
+    width: 100%;
+    min-height: calc(100vh - 320px);
+
+    margin: 10px auto;
 }
 
 footer
@@ -184,35 +187,37 @@ footer p
 {
     width: 90%;
 
-    margin: 10px auto;
+    margin: auto;
 
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .Photos img
 {
     width: 250px;
-    height: auto;
+    height: 250px;
+    object-fit: cover;
 }
 
 .Scale
 {
-    margin-top: 5px;
+    margin: 5px 5px;
     /* display: inline-block; */ /* Строчно-блочный элемент */
     overflow: hidden;
 }
 
 .Scale img
 {
-    transition: 1s; 
+    transition: all 1s ease; 
     display: block;
 }
 
 .Scale img:hover
 {
-    transform: scale(1.2);
+    transform-origin: center;
+    transform:scale(1.2) rotate(5deg);
 }
 
 .ModalBlock
@@ -235,23 +240,25 @@ footer p
     cursor: zoom-out;
 }
 
-.ModalBlock span
+.ModalBlock span img
 {
-    width: fit-content;
+    width: 75px;
+    height: auto;
 
-    font-size: 30px;
     margin: 10px;
     padding: 20px;
-
-    color: #262f5c;
-    background-color: #ffffff;
-    border-radius: 100%;
 
     position: absolute;
     right: 0;
 
-    
     cursor: pointer;
+    transition: all 0.5s ease; 
+}
+
+.ModalBlock span img:hover
+{
+    transform-origin: center;
+    transform: rotate(270deg);
 }
 
 .ModalIMG
@@ -318,12 +325,67 @@ footer p
 }
 /* Конец стилей для страницы "About" */
 
-
-/*  */
-.Center
+/* Стили для страницы "Contacts" */
+.Contacts
 {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
 }
-/*  */
+
+.Contacts div
+{
+    width: 25%;
+}
+
+.Contacts p
+{
+    font-size: 25px;
+    text-align: justify;
+}
+/* Конец стилей для страницы "Contacts" */
+
+
+
+/* Общие CSS стили */
+
+    /*  */
+    .Center
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /*  */
+
+    /* CSS для полосы прокутки */
+
+    /* Настраивает ширину полосы прокрутки */
+    ::-webkit-scrollbar 
+    {
+        width: 8px;
+    }
+
+    /* Настраивает цвет полосы прокрутки */
+    ::-webkit-scrollbar-track 
+    {
+        background: #fff; 
+    }
+    
+    /* Настраивает сам ползунок прокрутки */
+    ::-webkit-scrollbar-thumb 
+    {
+        background: #111;
+        border-radius: 5px;
+    }
+
+    /* Настраивает ползунок прокрутик при наведении на него */
+    ::-webkit-scrollbar-thumb:hover 
+    {
+        background: #555; 
+    }
+
+    /* Конец CSS для полосы прокрутки */
+
+/* Общие CSS стили */

@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="CSS/style.css">
+    <?php
+        require_once "widget/links.php";
+    ?>
     <title>Photographer</title>
 </head>
 <body>
@@ -17,7 +19,7 @@
 
     <main class="Center"> <!-- TO DO подключи БД -->
         <div class="About">
-            <img src="IMG/About/user.png" alt="Me">
+            <img src="IMG/About/Me.jpg" alt="Me">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                 Eaque quisquam repellat, reiciendis autem sit placeat laborum quas dicta harum libero debitis, 
