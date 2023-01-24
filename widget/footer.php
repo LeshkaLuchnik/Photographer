@@ -8,12 +8,13 @@
         <p class="string">Instagram</p>
     </a>
 </div>
+<div>
     <p>CREATED BY LESHKA_LUCHNIK</p>
     <p>
         &copy;
         <?php
-
             echo date( 'Y' );
-
         ?>
     </p>
+</div>
+

@@ -16,7 +16,22 @@
     </header>
 
     <main>
+        <div class='Photos' id='Photos'>
+            <?php
+                for ($j = 1; $j < 28; $j++)
+                {
+                    echo '<div class="Scale">';
+                        echo "<img src='IMG/Photos/" . $j . ".JPG' alt='" . $j . "' id='$j' onclick='ModalIMG(event)'>";
+                    echo '</div>';
+                }
+            ?>
+        </div>
+        
 
+        <div id="ModalBlock" class="ModalBlock">
+            <span id="close">&times;</span>
+            <img class="ModalIMG animate" id="ModalIMG">
+        </div>
     </main>
 
     <footer>
