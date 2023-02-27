@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <?php
         require_once "widget/links.php";
     ?>
@@ -20,10 +19,10 @@
     <main>
         <div class='Photos' id='Photos'>
             <?php
-                for ($j = 1; $j < 28; $j++)
+                for ($j = 0; $j < 47; $j++)
                 {
                     echo '<div class="Scale">';
-                        echo "<img src='IMG/Photos/" . $j . ".JPG' alt='" . $j . "' id='$j' onclick='ModalIMG(event)'>";
+                        echo "<img src='IMG/Photos/" . $j . ".jpg' alt='" . $j . "' id='$j' onclick='ModalIMG(event)'>";
                     echo '</div>';
                 }
             ?>
